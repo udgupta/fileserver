@@ -7,6 +7,7 @@
 	<build>
     <plugins>
         <plugin>
+        <!-- mvn assembly:single -->
             <artifactId>maven-assembly-plugin</artifactId>
             <configuration>
                 <archive>
