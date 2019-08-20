@@ -14,7 +14,7 @@ public class JettyServer {
         ResourceHandler resource_handler = new ResourceHandler();
         resource_handler.setDirectoriesListed(true);
 
-        resource_handler.setResourceBase(System.getenv("HOME") + "/store");
+        resource_handler.setResourceBase(System.getenv("HOME"));
 
         HandlerList handlers = new HandlerList();
         handlers.setHandlers(new Handler[] { resource_handler, new DefaultHandler() });
